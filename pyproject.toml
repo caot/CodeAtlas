@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeatlas"
+version = "0.1.0"
+description = "Lightweight codebase atlas: scan, graph, summarize."
+authors = [{name="You"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["rich>=13.7", "networkx>=3.2", "streamlit>=1.38"]
+
+[project.scripts]
+codeatlas = "codeatlas.cli:main"
